@@ -23,6 +23,7 @@
           padding: 10px;
           outline: none;
           font-size: 20px;
+          margin: 1rem 1rem 1rem 0;
         }
         button{
           background-color: dodgerblue;
@@ -42,19 +43,21 @@
 </head>
 <body>
     <div>
-    <h1>Cadastrar</h1>
-    <form method="POST" action="">
-        <label for="name">Nome:</label>
-        <input type="text" id="name" name="name" required>
-      
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" required>
-      
-        <label for="password">Senha:</label>
-        <input type="password" id="password" name="password" required>
-      
-        <button type="submit">Registrar</button>
-      </form>
+        <h1>Cadastrar</h1>
+        <form method="post" action="/user/create">
+          <div>
+            <label for="name">Nome:</label>
+            <input type="text" id="name" name="name" required>
+          
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+          
+            <label for="password">Senha:</label>
+            <input type="password" id="password" name="password" required>
+          
+            <button type="submit">Registrar</button>
+          </div>
+        </form>
     </div>
 </body>
 </html>
