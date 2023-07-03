@@ -5,20 +5,60 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Página inicial</title>
+    <style>
+
+        h1 {
+            text-align: center;
+
+        }
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: aquamarine;
+        }
+
+        div {
+            background-color: rgba(255, 255, 255);
+            position: absolute;
+            top: 50%;
+            border-radius: 20px;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            padding: 120px;
+            color: black;
+        }
+
+        h2 {
+            margin-top: 0;
+        }
+
+        textarea {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            resize: none;
+        }
+
+        input {
+            padding: 10px;
+            outline: none;
+            font-size: 20px;
+            margin-left: 130px;
+            margin-top: 70px;
+        }
+
+    </style>
 </head>
 <body>
-    <h1>Anotações</h1>
-
-        <div>
-            <form method="POST" action="">
-                <input type="hidden" name="_token" required>
-                    <label for="title">Título</label>
-                    <input type="text" name="title" id="title">
-                    <label for="content">Conteúdo</label>
-                    <textarea name="content" id="content" rows="5"></textarea>
-                    <button type="submit">Salvar</button>
-            </form>
-        </div>
-        </header>
+    <h1>Annotation System</h1>
+    <div>
+        <h2>Adicionar uma nova Anotação</h2>
+        <form method="POST" action="">
+            <textarea name="text" rows="4" cols="50"></textarea>
+            <input type="hidden" name="user_id" value="<?php echo "$user[id]"; ?>">
+            <br>
+            <input type="submit" value="Salvar">
+        </form>
+    </div>
     </body>
 </html>
