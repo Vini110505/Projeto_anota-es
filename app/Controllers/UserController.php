@@ -28,7 +28,7 @@ class UserController extends Controller
     $user = new User();
     $user->gravar(['name' => $request->post('name'), 'email' => $request->post('email'), 'password' => $request->post('password')]);
 
-    $this->view('/');
+    $this->redirect('/');
   }
 
 }
