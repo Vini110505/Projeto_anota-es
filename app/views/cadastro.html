@@ -3,8 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Cadastro</title>
     <style>
+
+        h1 {
+          text-align: center;
+        }
         body {
           font-family: Arial, Helvetica, sans-serif;
           background-color: aquamarine;
@@ -39,9 +43,15 @@
         button:hover{
           background-color: #00a8ff;
         }
+        a {
+          text-align: center;
+
+        }
     </style>
 </head>
 <body>
+  <h1>Annotation System</h1>
+
     <div>
         <h1>Cadastrar</h1>
         <form method="post" action="/user/create">
@@ -56,6 +66,9 @@
             <input type="password" id="password" name="password" required>
           
             <button type="submit">Registrar</button>
+            <a href="/index/return"> Retornar</a>
+
+            
           </div>
         </form>
     </div>

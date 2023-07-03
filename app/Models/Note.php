@@ -4,8 +4,8 @@ namespace App\Models;
 
 use Core\Database;
 
-class User {
-  private $table = 'users';
+class Note {
+  private $table = 'anotacoes';
 
   public function find($columns = '*', $conditions = null) {
     $db = Database::getInstance();
